@@ -69,9 +69,8 @@ def main():
 
         body = row[8]
         body += "<hr/>"
-        body += "Förening: " + row[7]
+        body += "Motionär(er): " + row[7]
         body += "\nHanterad av: " + row[11]
-        body += "\nInskickad av: " + row[12]
         ai = request.content_factories['AgendaItem'](
             title="%s%s) %s" % (row[1], row[2], row[6]),
             tags=(row[0],),
